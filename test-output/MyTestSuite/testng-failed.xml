@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AuthTests(failed)">
+    <classes>
+      <class name="tests.AuthTests">
+        <methods>
+          <include name="tokenRequest_statusCode200"/>
+          <include name="twoStepAuth_authCodeNotNull"/>
+          <include name="twoStepAuth_statusCode200"/>
+          <include name="tokenRequest_accessTokenNotNull"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.AuthTests -->
+    </classes>
+  </test> <!-- AuthTests(failed) -->
+  <test thread-count="5" name="RoomServiceTests(failed)">
+    <classes>
+      <class name="tests.RoomServiceTests">
+        <methods>
+          <include name="addRoom_invalidRoomShouldNotExist_Fail"/>
+          <include name="viewRoomList_bodyIsEmpty_Fail"/>
+          <include name="addRoom_status200_andVerify"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.RoomServiceTests -->
+    </classes>
+  </test> <!-- RoomServiceTests(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RoomService Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="API Tests(failed)">
+    <classes>
+      <class name="tests.RoomServiceTests">
+        <methods>
+          <include name="addRoom_invalidRoomShouldNotExist_Fail"/>
+          <include name="viewRoomList_bodyIsEmpty_Fail"/>
+          <include name="setup"/>
+          <include name="addRoom_verifyRoomDetails"/>
+        </methods>
+      </class> <!-- tests.RoomServiceTests -->
+    </classes>
+  </test> <!-- API Tests(failed) -->
+</suite> <!-- Failed suite [RoomService Suite] -->

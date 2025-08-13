@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RoomServiceAPISuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="RoomServiceTests(failed)">
+    <classes>
+      <class name="tests.RoomServiceTests">
+        <methods>
+          <include name="testUpdateRoomPrice"/>
+          <include name="testViewRoomByType" invocation-numbers="0 1 2"/>
+          <include name="testViewRoomById"/>
+          <include name="testViewRoomList"/>
+          <include name="testDeleteRoomById"/>
+          <include name="testAddRoom"/>
+        </methods>
+      </class> <!-- tests.RoomServiceTests -->
+    </classes>
+  </test> <!-- RoomServiceTests(failed) -->
+</suite> <!-- Failed suite [RoomServiceAPISuite] -->
