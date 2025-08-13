@@ -38,36 +38,8 @@ While earlier sprints covered **manual testing, UI automation, and Postman API t
 * `testlistener.java` – TestNG event listener for logs/screenshots
 * `testdataloader.java` – Externalized payload & test data handling
 * `room.java` – POJO for room object mapping
-  
-## 📂 Directory Structure
-
-```
-src/
- ├── main/java/
- │    ├── utils/
- │    │    ├── apibase.java
- │    │    ├── authutil.java
- │    │    └── extentmanager.java
- │    └── pojo/
- │         └── room.java
- ├── test/java/
- │    ├── tests/
- │    │    ├── RoomServiceTests.java
- │    │    ├── AuthTests.java
- │    └── listeners/
- │         └── testlistener.java
-resources/
- ├── schema/
- │    └── roomlist_schema.json
- └── testdata/
-      └── room_payload.json
-```
 
 ## 📊 Reporting
-
-### **Allure Reports**
-
-* **Features:** Test history, detailed steps, request/response logs, attachments
 
 ### **Extent Reports**
 
@@ -81,37 +53,11 @@ resources/
 
 ## 👥 Team Contributions
 
-| Module              | Assignee(s)                 |
-| ------------------- | --------------------------- |
-| Room API Automation | Yashika R, Ritushree        |
-| Auth API Automation | K.V. Surendra, Kartik Tyagi |
-| Schema Validation   | Yashika R                   |
-| Token Utility       | K.V. Surendra               |
-| Base API Setup      | Kartik Tyagi                |
-
-
-## ▶ How to Run
-
-**1. Clone repo & install dependencies**
-
-```bash
-mvn clean install
-```
-
-**2. Run tests**
-
-```bash
-mvn test
-```
-
-**3. View Allure report**
-
-```bash
-allure serve target/allure-results
-```
-
-**4. View Extent report**
-
-* Open `target/extent-reports/index.html` in a browser
-
----
+| Module                | Assignee(s)                 |
+| -------------------   | --------------------------- |
+| Room API Automation   | Yashika R, Ritushree        |
+| Auth API Automation   | K.V. Surendra, Kartik Tyagi |
+| Data Driven Framework | Yashika R                   |
+| Pojo class            | Ritushree                   |
+| Token Utility         | K.V. Surendra               |
+| Base API Setup        | Kartik Tyagi                |
